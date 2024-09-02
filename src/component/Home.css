@@ -1,0 +1,32 @@
+div.content_home{
+    height: 100%;
+    max-width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+div.content_home h1{
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+    color: gray;
+}
+
+div.content_home p{
+    font-size: 1rem;
+    color: #43766C;
+    padding-bottom: 30px;
+}
+
+div.content_home a{
+    font-size: 1rem;
+    background: #43766C;
+    border: 2px solid #43766C;
+    height: 3rem;
+    width: 10rem;
+    border-radius: 10px;
+    color: white;
+    display: flex; align-items: center; justify-content: center;
+}

@@ -1,0 +1,206 @@
+input:focus{
+    outline: none;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+div.content_new {
+    height: max-content;
+    min-width: 25rem;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 90% 10%;
+    grid-auto-rows: min-content;
+    padding: 10px;
+    background: lightgray;
+}
+
+div.content_new  article{
+    display: grid;
+    grid-template-columns: 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33%;
+    grid-auto-rows: min-content;
+}
+
+
+div.content_new article h1{
+    grid-column: span 6;
+    font-size: 2rem;
+    background: white;
+    padding: 15px 5px;
+}
+
+div.content_new article div.settings{
+    grid-column: span 6;
+    padding: 10px;
+}
+
+div.content_new article div.settings span.separators{
+    background: black;
+    padding: 0.1px;
+    height: 50%;
+}
+
+div.content_new article div.settings div.content{
+    background: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 5px;
+}
+
+div.content_new article div.settings div.countChar span{
+    display: block;
+    text-align: center;
+    font-size: 0.5rem;
+}
+
+div.content_new article div.settings div.countChar span.val{
+    display: block;
+    color: lightgray;
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+}
+
+div.content_new article div.obj_title{
+    background: white;
+    grid-column: span 12;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+div.content_new article div.obj_title *{
+    height: 2rem;
+}
+
+div.content_new article div.obj_title label{
+    width: 15%;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    color: lightgray;
+}
+
+div.content_new article div.obj_title input{
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid gray;
+    font-size: 1.3rem;
+}
+
+div.content_new article div.note_content{
+    grid-column: span 12;
+    background: white;
+    position: relative;
+}
+
+div.content_new article div.note_content textarea{
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    padding: 10px;
+    min-height: 10rem;
+    max-height: 15rem;
+    border: none;
+    position: relative;
+    z-index: 8;
+    line-height: 25px;
+}
+
+div.content_new article div.note_content div.lines{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 25px;
+    overflow: hidden;
+    z-index: 4;
+}
+
+div.content_new article div.note_content div.lines span{
+    display: block;
+    height: 0.1rem;
+    width: 100%;
+    background: lightgray;
+}
+
+
+
+div.content_new aside{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+div.content_new aside span.separators{
+    background: black;
+    padding: 0.3px;
+    width: 80%;
+}
+
+div.content_new aside button{
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    border-radius: 10px;
+    position: relative;
+    padding: 10px;
+}
+
+div.content_new aside button div{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+    background: white;
+    box-shadow: 1px 5px 5px #7d7d7d7a;
+    position: absolute;
+    top: 0;
+    right: 105%;
+    z-index: 10;
+    border-radius: 2rem;
+    min-width: 0;
+    width: 0;
+    transition: 0.4s;
+}
+
+div.content_new aside button div button{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 100%;
+    transition: 0.4s;
+}
+div.content_new aside button div button:hover{
+    transform: scale(1.2);
+}
+
+div.content_new aside button#chosenCol:hover div{
+    min-width: max-content;
+    padding: 10px;
+}
+
+div.content_new aside button#chosenCol span{
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: lightgray;
+    border-radius: 5px;
+}
